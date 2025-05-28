@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block contents %}
+<div class="card p-3">
+    <form method="POST">
+        <label class="label" for="phrase">フレーズ：</label>
+        <input id="phrase" name="phrase" type="text" value="{{ it.phrase }}" class="input">
+        <label class="label" for="meaning">意味：</label>
+        <textarea id="meaning" name="meaning" class="textarea">{{ it.meaning }}</textarea>
+        <input type="submit" value="保存" class="button" is-primary>
+    </form>
+</div>
+{% endblock %}
