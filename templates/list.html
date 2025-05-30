@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 {% block contents %}
-<div class='card'>   
+<div>   
         編集したいメモを選んでください:
-    <ul class>
+    <ul>
         {% for it in items %}
-        <li class="card my-3">
+        <li>
             <a href="/memo/{{ it.id }}">
                 {{ it.phrase }}
             </a>
